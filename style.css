@@ -32,6 +32,6 @@ nav li a {
     color:#5a6478;
     text-decoration:none;
 }
-nav li a :hover{
+nav li a:hover{
     color:#3e4556;
 }
