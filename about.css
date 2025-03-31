@@ -154,17 +154,17 @@ body {
 
 /* Design Variables */
 :root {
-    --primary: #2d9474;
-    --primary-light: #4ead8b;
-    --primary-dark: #1e7d5e;
-    --accent: #9b6dff;
-    --accent-light: #c4a6ff;
-    --text-dark: #334155;
-    --text-light: #64748b;
-    --background: #f8fafc;
-    --white: #ffffff;
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --transition: all 0.3s ease;
+    primary: #2d9474;
+    primary-light: #4ead8b;
+    primary-dark: #1e7d5e;
+    accent: #9b6dff;
+    accent-light: #c4a6ff;
+    text-dark: #334155;
+    text-light: #64748b;
+    background: #f8fafc;
+    white: #ffffff;
+    card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
 }
 
 h1, h2, h3 {
