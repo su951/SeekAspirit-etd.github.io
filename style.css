@@ -95,17 +95,17 @@ a:hover{
 
 /* Enhanced Hover Effects */
 .floating-btn:hover {
-    background: rgba(255,255,255,0.2);
+    background: #5a6478;
     border-color: #A6D9F7;
-    color: #A6D9F7;
+    color: #ffffff;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .left-btn:hover {
-    background: rgba(166, 217, 247, 0.3);
+    background: #5a6478;
 }
 
 .right-btn:hover {
-    background: rgba(90, 100, 120, 0.3);
+    background: #5a6478;
 }
