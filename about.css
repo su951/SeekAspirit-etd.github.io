@@ -10,7 +10,7 @@ html,body{
 }
 
 body {
-     background: url("footprintsBG.png") center/cover no-repeat fixed !important:;
+     background: url("footprintsBG.png") center/cover no-repeat fixed !important;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
