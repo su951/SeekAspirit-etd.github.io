@@ -55,22 +55,26 @@ a:hover{
     transform: translate(-50%, -50%);
 }
 
-    /* Button Styling */
-    .getStartedbtn {
-      background-color:#A6D9F7; /* Blue background */
-      color:#000000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease; /* Smooth hover effect */
-    }
+footer {
+    position: fixed; /* or 'absolute' depending on your needs */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* This centers the button horizontally */
+    padding: 20px 0; /* Adds some spacing around the button */
+    z-index: 10; /* Ensures it appears above the video */
+}
 
-    .getStartedbtn:hover {
-      background-color:#8cbed6;/* lighter blue on hover */
-    }
-button a{
-    text-decoration:none;
-    color:black;
+/* Optional: If you want the button itself to be centered as a block element */
+.getStartedbtn {
+    display: inline-block; /* Allows text-align center to work on the parent */
+    /* Your existing button styles */
+    background-color: #A6D9F7;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
