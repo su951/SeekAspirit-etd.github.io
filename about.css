@@ -112,12 +112,17 @@ a:hover{
     visibility: visible;
     transform: translateX(0);
 }
-/* Full-page container */
-body, html {
+/* Reset default margin & padding */
+* {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Full-page scroll effect */
+body, html {
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -159,3 +164,4 @@ body, html {
     text-align: center;
     width: 100%;
 }
+
