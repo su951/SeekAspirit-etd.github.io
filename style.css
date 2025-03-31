@@ -54,3 +54,23 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+    /* Button Styling */
+    .getStartedbtn {
+      background-color:#A6D9F7; /* Blue background */
+      color:#000000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .getStartedbtn:hover {
+      background-color:#8cbed6;/* lighter blue on hover */
+    }
+button a{
+    text-decoration:none;
+    color:black;
+}
