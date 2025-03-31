@@ -241,7 +241,8 @@ body, html {
     font-weight: bold;
 }
 .about-image img {
-    width: 100%;
+    border-radius:10px;
+    width: 335px;
     max-width: 500px;
     display: block;
     margin: 0 auto;
