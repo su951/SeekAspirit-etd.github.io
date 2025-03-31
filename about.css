@@ -9,7 +9,7 @@ html,body{
     padding: 0;
 }
 nav {
-    text-aign:center;
+    text-align:center;
     position: fixed;  /* Keeps it at the top */
     top: 0;
     left: 0;
@@ -164,24 +164,19 @@ body, html {
     text-align: center;
     width: 100%;
 }
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
         :root {
-            --primary: #2d9474;
-            --primary-light: #4ead8b;
-            --primary-dark: #1e7d5e;
-            --accent: #9b6dff;
-            --accent-light: #c4a6ff;
-            --text-dark: #334155;
-            --text-light: #64748b;
-            --background: #f8fafc;
-            --white: #ffffff;
-            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
+            primary:#2d9474;
+            primary-light: #4ead8b;
+            primary-dark: #1e7d5e;
+            accent: #9b6dff;
+            accent-light: #c4a6ff;
+            text-dark: #334155;
+            text-light: #64748b;
+            background: #f8fafc;
+            white: #ffffff;
+            card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
         }
 
         body {
@@ -213,7 +208,7 @@ body, html {
 
         p {
             margin-bottom: 1rem;
-            color: var(--text-light);
+            color: var(text-light);
         }
 
         img {
@@ -235,25 +230,25 @@ body, html {
             border-radius: 4px;
             text-decoration: none;
             font-weight: 500;
-            transition: var(--transition);
+            transition: var(transition);
             cursor: pointer;
             border: none;
             font-size: 1rem;
         }
 
         .btn-primary {
-            background-color: var(--primary);
+            background-color: var(primary);
             color: var(--white);
         }
 
         .btn-primary:hover {
-            background-color: var(--primary-dark);
+            background-color: var(primary-dark);
         }
 
         .btn-outline {
             background-color: transparent;
-            color: var(--primary);
-            border: 1px solid var(--primary);
+            color: var(primary);
+            border: 1px solid var(primary);
         }
 
         .btn-outline:hover {
@@ -261,8 +256,8 @@ body, html {
         }
 
         .btn-white {
-            background-color: var(--white);
-            color: var(--primary);
+            background-color: var(white);
+            color: var(primary);
         }
 
         .btn-white:hover {
@@ -326,7 +321,7 @@ body, html {
             width: 40px;
             height: 40px;
             margin-right: 10px;
-            background-color: var(--primary-light);
+            background-color: var(primary-light);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -336,7 +331,7 @@ body, html {
         }
 
         .highlight {
-            color: var(--primary);
+            color: var(primary);
             font-weight: 400;
         }
 
@@ -381,7 +376,7 @@ body, html {
 
         /* Values Section */
         .values {
-            background-color: var(--white);
+            background-color: var(white);
         }
 
         .values-grid {
