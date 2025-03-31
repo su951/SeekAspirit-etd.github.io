@@ -54,7 +54,7 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Floating Buttons - Improved Positioning */
+
 .floating-buttons {
     position: fixed;
     top: 50%;
@@ -95,17 +95,17 @@ a:hover{
 
 /* Enhanced Hover Effects */
 .floating-btn:hover {
-    background: #5a6478;
-    border-color: #A6D9F7;
+    background:#5a6478;
+    border-color: #5a6478;
     color: #ffffff;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .left-btn:hover {
-    background: #5a6478;
+    background:#5a6478;
 }
 
 .right-btn:hover {
-    background: #5a6478;
+    background:#5a6478;
 }
