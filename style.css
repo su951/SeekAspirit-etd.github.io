@@ -167,7 +167,7 @@ a:hover{
     visibility: hidden;
     transform: translateX(10px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-     backdrop-filter: blur(10px); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
 }
 
 .sub-dropdown:hover .sub-dropdown-content {
