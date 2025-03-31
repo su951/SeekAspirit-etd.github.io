@@ -174,4 +174,87 @@ body, html {
     text-align: center;
     width: 100%;
 }
+/* Content Section Styling */
+.about-content {
+    background: #f9f7f1; /* Soft off-white background */
+    padding: 80px 15%;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow at the top */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Section Headings */
+.about-content h2 {
+    font-size: 2rem;
+    color: #6a4c93; /* Spiritual deep purple shade */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Paragraph Text */
+.about-content p {
+    font-size: 1.2rem;
+    color: #555; /* Soft gray for readability */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* List Styling */
+.about-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* List Items */
+.about-content ul li {
+    font-size: 1.2rem;
+    background: #e8def8; /* Light lavender background */
+    color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for list items */
+.about-content ul li:hover {
+    transform: scale(1.05);
+    background: #d5c2f0;
+}
+
+/* Fancy Quotes */
+.about-content p::before, 
+.about-content p::after {
+    content: '“';
+    font-size: 1.5rem;
+    color: #a27ac7;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 60px 10%;
+        border-radius: 30px;
+    }
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    .about-content p, 
+    .about-content ul li {
+        font-size: 1.1rem;
+    }
+}
+
 
