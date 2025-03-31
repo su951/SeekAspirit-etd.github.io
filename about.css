@@ -240,6 +240,31 @@ body, html {
     color: #a27ac7;
     font-weight: bold;
 }
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.align-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 250px;
+}
+
+.align-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    width: 250px;
+}
+
+/* Ensure proper flow around floated images */
+.about-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
