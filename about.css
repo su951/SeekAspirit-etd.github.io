@@ -347,7 +347,7 @@ body {
 }
 
 .btn-primary {
-    background: #E6F5E1;
+    background:#FFD700;
     color: #013220;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
@@ -359,11 +359,12 @@ body {
 
 .btn-outline {
     border: 2px solid #E6F5E1;
-    color: #E6F5E1;
+    color: #013220;
+    background:#FFD700;
 }
 
 .btn-outline:hover {
-    background: #E6F5E1;
+    background: #fff;
     color: #013220;
 }
 
