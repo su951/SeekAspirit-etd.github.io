@@ -360,7 +360,7 @@ img {
     gap: 2rem;
 }
 .testimonials {
-    background-color: #E6E6FA; /* Light lavender for a calming effect */
+    background-color: #F5F5DC; /* Light lavender for a calming effect */
     padding: 50px 0;
     text-align: center;
 }
@@ -373,7 +373,7 @@ img {
 }
 
 .testimonial-card {
-    background: #ffffff;
+    background: #E6E6FA;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
