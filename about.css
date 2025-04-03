@@ -219,6 +219,7 @@ img {
 
 .btn-primary:hover {
     background-color: #2E5E4E;
+    color:white;
 }
 
 .btn-outline {
