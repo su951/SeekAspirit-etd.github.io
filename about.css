@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -152,221 +153,117 @@ body {
     width: 100%;
 }
 
-/* Design Variables */
-:root {
-    primary: #2d9474;
-    primary-light: #4ead8b;
-    primary-dark: #1e7d5e;
-    accent: #9b6dff;
-    accent-light: #c4a6ff;
-    text-dark: #334155;
-    text-light: #64748b;
-    background: #f8fafc;
-    white: #ffffff;
-    card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-p {
-    font-size:30px;
-    margin-bottom: 1rem;
-    color: var(--text-light);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* Button Styles */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    cursor: pointer;
-    border: none;
-    font-size: 1rem;
-}
-
-.btn-primary {
-    background-color:#013220;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #2E5E4E;
-    color: white;
-}
-
-.btn-outline {
-    background-color:#013220;
-    color: white;
-}
-
-.btn-outline:hover {
-    background-color: #2ESE4E;
-    color: white;
-}
-
-.btn-white {
-    background-color: var(--white);
-    color: var(--primary);
-}
-
-.btn-white:hover {
-    background-color: #f1f5f9;
-}
-
-.text-center {
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
 }
 
+/* Section Spacing */
 .section {
-    background-color:#F5F5DC;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-title p {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Hero Section */
+/* Hero Section - About Us */
 .hero {
-    position: relative;
-    padding: 100px 0;
-    overflow: hidden;
-    background:#F5F5DC;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        radial-gradient(circle at 30% 20%, rgba(167, 139, 250, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 70% 80%, rgba(147, 197, 253, 0.1) 0%, transparent 40%);
-    z-index: 0;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
+    background: linear-gradient(135deg, #2E5E4E, #013220);
+    color: white;
+    padding: 100px 20px;
     text-align: center;
 }
 
 .hero-title {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
+    gap: 10px;
+    font-size: 42px;
+    font-weight: bold;
 }
 
-.hero-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    background-color: var(--primary-light);
-    border-radius: 50%;
+.hero-title .highlight {
+    color: #FFD700;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Our Journey Section */
+.story {
     display: flex;
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
     justify-content: center;
-    color: var(--white);
-    font-size: 1.5rem;
-}
-
-.highlight {
-    color: var(--primary);
-    font-weight: 400;
-}
-
-/* Our Story Section */
-.story {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
-
-@media (min-width: 768px) {
-    .story {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-}
-
-.story-image {
-    border-radius: 16px;
-    overflow: hidden;
-    height: 400px;
-    background-color: #e2e8f0;
-    position: relative;
 }
 
 .story-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.story-content {
+    max-width: 500px;
+    text-align: left;
 }
 
 .story-content h2 {
-    margin-bottom: 1.5rem;
+    font-size: 32px;
+    color: #013220;
+    margin-bottom: 15px;
 }
 
 .btn-group {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Values Section */
+.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
 
+.btn-primary {
+    background: #013220;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid #013220;
+    color: #013220;
+    background: transparent;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Core Values Section */
 .values {
-    background: url('background.jpg') center/cover no-repeat; /* Replace with a suitable background */
+    background: url('background.jpg') center/cover no-repeat;
     padding: 60px 0;
     text-align: center;
-}
-
-.section-title h2 {
-    font-size: 32px;
-    color: #fff;
-}
-
-.section-title p {
-    color: #ddd;
 }
 
 .values-grid {
@@ -377,7 +274,7 @@ img {
 }
 
 .value-card {
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 12px;
     width: 300px;
@@ -407,11 +304,10 @@ img {
     color: #ddd;
 }
 
-/*testimonials*/
+/* Transformational Journeys Section */
 .testimonials {
-    background-color: #F5F5DC; /* Light lavender for a calming effect */
+    background: linear-gradient(135deg, #E6E6FA, #B3CDE0);
     padding: 50px 0;
-    text-align: center;
 }
 
 .testimonials-grid {
@@ -422,7 +318,7 @@ img {
 }
 
 .testimonial-card {
-    background: #E6E6FA;
+    background: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -451,11 +347,9 @@ img {
     color: #666;
 }
 
-/*CTA section*/
-
-/* CTA Section Styling */
+/* CTA - Begin Your Journey Today */
 .cta {
-    background: linear-gradient(135deg, #2E5E4E, #013220); /* Deep spiritual green gradient */
+    background: linear-gradient(135deg, #2E5E4E, #013220);
     padding: 80px 20px;
     text-align: center;
     color: white;
@@ -480,39 +374,6 @@ img {
     color: #E0F2F1;
 }
 
-.btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.btn {
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.btn-white {
-    background: #fff;
-    color: #013220;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-}
-
-.btn-outline {
-    border: 2px solid white;
-    color: white;
-    background: transparent;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
-}
-
 /* Fade-in Animation */
 @keyframes fadeInUp {
     from {
@@ -524,5 +385,3 @@ img {
         transform: translateY(0);
     }
 }
-
-
