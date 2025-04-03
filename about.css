@@ -188,6 +188,7 @@ h3 {
 }
 
 p {
+    font-size:30px;
     margin-bottom: 1rem;
     color: var(--text-light);
 }
@@ -212,12 +213,12 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color:#013220;
+    color: white;
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-dark);
+    background-color: #2E5E4E;
 }
 
 .btn-outline {
@@ -244,7 +245,7 @@ img {
 }
 
 .section {
-    background-color:white;
+    background-color:#F5F5DC;
     padding: 80px 0;
 }
 
@@ -263,7 +264,7 @@ img {
     position: relative;
     padding: 100px 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    background:#F5F5DC;
 }
 
 .hero::before {
