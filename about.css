@@ -354,11 +354,60 @@ img {
 
 /* Values Section */
 
-.values-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.values {
+    background: url('background.jpg') center/cover no-repeat; /* Replace with a suitable background */
+    padding: 60px 0;
+    text-align: center;
 }
+
+.section-title h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.section-title p {
+    color: #ddd;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.value-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/*testimonials*/
 .testimonials {
     background-color: #F5F5DC; /* Light lavender for a calming effect */
     padding: 50px 0;
