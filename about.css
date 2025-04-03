@@ -292,10 +292,18 @@ body {
 }
 
 /* 🌿 Transformational Journeys (Testimonials) */
+
 .testimonials {
     background: #EEE8F8;
     padding: 50px 0;
     text-align: center;
+}
+
+.testimonials-grid {
+    display: flex;  /* Enables horizontal layout */
+    justify-content: center;  /* Centers the cards */
+    gap: 20px;  /* Space between cards */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
 }
 
 .testimonial-card {
