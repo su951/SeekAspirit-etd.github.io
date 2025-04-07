@@ -108,15 +108,16 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: url('privilegesBG.jpeg') no-repeat center center/cover;
     height: 150vh;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    filter:blur(4px);
+    justify-content: center; 
 }
-
+.hero-section{
+    background: url('privilegesBG.jpeg') no-repeat center center/cover;
+     filter:blur(4px);
+}
 .hero-overlay {
     padding: 40px;
     border-radius: 20px;
