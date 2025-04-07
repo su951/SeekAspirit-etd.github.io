@@ -206,3 +206,52 @@ a:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+/* Promo Section */
+.promo-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.promo-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.promo-content {
+    max-width: 500px;
+}
+
+.promo-content h2 {
+    font-size: 2rem;
+    color: #5a6478;
+    margin-bottom: 15px;
+}
+
+.promo-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.promo-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5a6478;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.promo-btn:hover {
+    background-color: #3e4556;
+}
+
