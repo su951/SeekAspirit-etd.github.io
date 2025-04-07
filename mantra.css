@@ -121,7 +121,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('images/mantra-hero.jpg'); /* Replace with your actual hero bg */
+  background-image: url('mantraBG.jpeg'); /* Replace with your actual hero bg */
   background-size: cover;
   background-position: center;
   filter: blur(8px);
