@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Spiritual Healing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff3e0);
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4db6ac;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #4db6ac;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #4db6ac;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00897b;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    /* Optional animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .container {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="subtitle">Feel free to reach out for guidance, healing sessions, or spiritual advice</p>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="example@domain.com" required>
+      </div>
+      <div class="form-group">
+        <label for="topic">Type of Healing Needed</label>
+        <select id="topic">
+          <option value="">-- Select an option --</option>
+          <option>Emotional Healing</option>
+          <option>Stress Relief</option>
+          <option>Chakra Balancing</option>
+          <option>Relationship Guidance</option>
+          <option>Past Life Regression</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message *</label>
+        <textarea id="message" placeholder="Describe your concern or how we can help..." rows="5" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send Your Message ✨</button>
+      </div>
+    </form>
+
+    <div class="message" id="formMessage"></div>
+    <div class="footer-note">🕉️ We are here to help you heal and grow spiritually 🌿</div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const topic = document.getElementById('topic').value;
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        formMessage.style.color = 'red';
+        formMessage.textContent = "Please fill in all required fields.";
+        return;
+      }
+
+      // Simulated form submission
+      formMessage.style.color = 'green';
+      formMessage.textContent = "🙏 Thank you! Your message has been received. We'll contact you soon.";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
