@@ -113,10 +113,10 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    filter:blur(4px);
 }
 
 .mantra-hero .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
