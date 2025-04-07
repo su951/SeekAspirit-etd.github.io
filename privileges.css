@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -239,7 +239,7 @@ a:hover {
 
 .promo-content h2 {
     font-size: 2rem;
-    color: 	#4b3f72;
+    color: #4b3f72;
     margin-bottom: 15px;
 }
 
@@ -252,7 +252,7 @@ a:hover {
 .promo-btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: 	#7c6eb0;
+    background-color: #7c6eb0;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
