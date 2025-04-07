@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="durga.css">
 </head>
 <body>
-   <!-- Background Audio -->
-  <audio autoplay loop hidden>
-    <source src="Durga Namavali.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+   <!-- Background Audio JS Triggered -->
+  <button class="audio-button" onclick="playAudio()">🔊 Start Chant</button>
+  <script>
+    function playAudio() {
+      const audio = new Audio("audio/durga-namavali.mp3");
+      audio.loop = true;
+      audio.play();
+    }
+  </script>
   <header>
     <nav>
       <ul>
