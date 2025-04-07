@@ -145,13 +145,13 @@ a:hover {
 
 /* Info Section */
 .mantra-info {
-    background-color: #ede9f3;
+    background-color: #e6f7f1;
     padding: 60px 20px;
     text-align: center;
 }
 
 .mantra-info h2 {
-    font-size: 2rem;
+    font-size: 3.1rem;
     color: #4b3f72;
     margin-bottom: 20px;
 }
@@ -170,7 +170,7 @@ a:hover {
   justify-content: center;
   gap: 30px;
   padding: 60px 20px;
-  background-color: #ede9f3;
+  background-color: #e6f7f1;
 }
 
 .mantra-card {
