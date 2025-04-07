@@ -209,23 +209,32 @@ a:hover {
 /* Promo Section */
 .promo-section {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: #fff;
-    padding: 60px 20px;
+    padding: 60px 5%;
     gap: 40px;
+}
+
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Aligns image to the left */
 }
 
 .promo-image img {
     width: 100%;
     max-width: 500px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
 }
 
 .promo-content {
+    flex: 1;
     max-width: 500px;
+    text-align: left;
 }
 
 .promo-content h2 {
