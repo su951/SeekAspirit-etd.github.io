@@ -5,6 +5,7 @@
 }
 
 body {
+    background:linear-gradient(to right, #b30000, #ff6600);
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
