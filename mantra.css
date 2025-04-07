@@ -127,22 +127,6 @@ a:hover {
   filter: blur(8px);
   z-index: 0;
 }
-
-.mantra-hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-}
-
-.mantra-hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.mantra-hero-content p {
-  font-size: 1.2rem;
-}
-
 /* Info Section */
 .mantra-info {
     background-color: #e6f7f1;
