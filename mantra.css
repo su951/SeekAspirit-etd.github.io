@@ -107,30 +107,40 @@ a:hover {
 }
 /* Hero Section */
 .mantra-hero {
-    background: url('mantraBG.jpeg') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter:blur(4px);
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
 }
 
-.mantra-hero .overlay {
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    color: #fff;
-    max-width: 700px;
+.mantra-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('images/mantra-hero.jpg'); /* Replace with your actual hero bg */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 0;
 }
 
-.mantra-hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+.mantra-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
 }
 
-.mantra-hero p {
-    font-size: 1.2rem;
+.mantra-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.mantra-hero-content p {
+  font-size: 1.2rem;
 }
 
 /* Info Section */
