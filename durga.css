@@ -177,15 +177,6 @@ nav li a:hover {
     transition: all 0.4s ease;
 }
 
-.name-card:hover .card-content {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.name-card:hover .card-overlay {
-    background: rgba(0, 0, 0, 0.4);
-}
-
 .name-card:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
