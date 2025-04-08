@@ -161,23 +161,23 @@ footer {
   color: #4b2e2e;
   font-size: 0.9rem;
 }
-/*background audio styling*/
- .audio-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 12px 20px;
-      background: linear-gradient(to right, #ff6666, #ffb366);
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
+/* Background Audio Styling */
+.audio-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #ff6666, #ffb366);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
 
-    .audio-button:hover {
-      background: linear-gradient(to right, #ff7f7f, #ffc080);
-    }
+.audio-button:hover {
+  background: linear-gradient(to right, #ff7f7f, #ffc080);
+}
 
