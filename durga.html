@@ -5,10 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>32 Names of Goddess Durga</title>
-  <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=lqAJF2yVUL8#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
   <link rel="stylesheet" href="durga.css">
 </head>
 <body>
+   <audio id="bgAudio" autoplay loop>
+    <source src="durga-mantra.mp3" type="audio/mpeg">
+    <source src="durga-mantra.ogg" type="audio/ogg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- Fallback controls -->
+  <div class="audio-controls" id="audioControls">
+    <p>Mantra Playback: </p>
+    <button onclick="document.getElementById('bgAudio').play()">▶ Play</button>
+    <button onclick="document.getElementById('bgAudio').pause()">⏸ Pause</button>
+    <button onclick="document.getElementById('bgAudio').volume += 0.1">🔊+</button>
+    <button onclick="document.getElementById('bgAudio').volume -= 0.1">🔊-</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const audio = document.getElementById('bgAudio');
+      audio.volume = 0.5; // Medium volume
+      
+      // Attempt autoplay
+      audio.play().catch(() => {
+        document.getElementById('audioControls').style.display = 'block';
+      });
+
+      // Enable audio on first user interaction
+      document.body.addEventListener('click', function initAudio() {
+        audio.play();
+        document.body.removeEventListener('click', initAudio);
+      }, { once: true });
+    });
+  </script>
+
   <header>
     <nav>
       <ul>
