@@ -12,15 +12,6 @@
     Your browser does not support audio.
   </audio>
 
-  <!-- Fallback controls -->
-  <div class="audio-controls" id="audioControls">
-    <p>Mantra Playback: </p>
-    <button onclick="document.getElementById('bgAudio').play()">▶ Play</button>
-    <button onclick="document.getElementById('bgAudio').pause()">⏸ Pause</button>
-    <button onclick="document.getElementById('bgAudio').volume += 0.1">🔊+</button>
-    <button onclick="document.getElementById('bgAudio').volume -= 0.1">🔊-</button>
-  </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const audio = document.getElementById('bgAudio');
@@ -70,7 +61,7 @@
   
   <div class="container">
     <!-- Card 1 -->
-    <div class="name-card" style="background-image: url('https://source.unsplash.com/random/300x300/?durga,goddess,1')">
+    <div class="name-card" style="background-image: url('durga.jpeg')">
       <div class="card-overlay"></div>
       <div class="card-content">
         <img class="name-image" src="durga.jpeg" alt="Durga Icon">
