@@ -162,22 +162,13 @@ footer {
   font-size: 0.9rem;
 }
 /* Background Audio Styling */
-.audio-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 12px 20px;
-  background: linear-gradient(to right, #ff6666, #ffb366);
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-.audio-button:hover {
-  background: linear-gradient(to right, #ff7f7f, #ffc080);
-}
-
+ .audio-controls {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+    }
