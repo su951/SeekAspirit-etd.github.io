@@ -11,19 +11,13 @@
    <!-- Background Audio JS Triggered -->
   <button class="audio-button" onclick="playAudio()">🔊 Start Chant</button>
   <script>
-  const audio = new Audio("audio/durga-namavali.mp3");
-  audio.loop = true;
-
-  function playAudio() {
-    audio.play()
-      .then(() => {
-        console.log("Audio playing");
-      })
-      .catch(error => {
-        console.error("Audio playback failed:", error);
-      });
-  }
+  document.addEventListener("click", function () {
+    const audio = new Audio("audio/durga-namavali.mp3");
+    audio.loop = true;
+    audio.play();
+  }, { once: true });
 </script>
+
   <header>
     <nav>
       <ul>
