@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // Here you would typically handle actual login validation
         console.log('Login attempt');
-        showMySessions(); // For demo, proceed to "My Session"
+        showMySession(); // For demo, proceed to "My Session"
     });
 
     // Handle signup form submission
@@ -83,6 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // Here you would typically handle user creation
         console.log('Signup attempt');
-        showMySessions(); // For demo, proceed to "My Session"
+        showMySession(); // For demo, proceed to "My Session"
     });
 });
