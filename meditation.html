@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meditation</title>
-    <link rel="stylesheet" href="Meditation.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spiritly - Meditation</title>
+  <link rel="stylesheet" href="meditation.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="footprints.html">Footprints</a></li>
-                <li class="dropdown">
-                    <a href="privileges.html">Privileges</a>
-                    <div class="dropdown-content">
-                        <a href="yoga.html">Yoga</a>
-                        <a href="meditation.html">Meditation</a>
-                        <a href="prayer.html">Prayer</a>
-                        <div class="sub-dropdown">
-                            <a href="mantra.html">Mantra Chanting</a>
-                            <div class="sub-dropdown-content">
-                                <a href="mrityunjaya.html">Mahamrityunjaya</a>
-                                <a href="gayatrimantra.html">Gayatri Mantra</a>
-                                <a href="durga.html">Durga Dvatrimsha Namavali</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="resources.html">Insights</a></li>
-                <li><a href="testimonials.html">Soul Stories</a></li>
-                <li><a href="contact.html">Connect</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <h1 class="hero-heading">Meditation</h1>
-        </div>
-       
-</section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="meditation.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h1>Find Your Inner Peace</h1>
+      <p>Welcome to Spiritly’s Meditation Corner – a sacred space to breathe, let go, and reconnect.</p>
+      <a href="#meditation-types" class="cta">Explore Meditations</a>
+    </div>
+  </section>
+
+  <!-- Meditation Types Section -->
+  <section id="meditation-types" class="section">
+    <h2 class="section-title">Types of Meditation</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mindfulness</h3>
+        <p>Be present in the moment with guided breathing and awareness techniques.</p>
+      </div>
+      <div class="card">
+        <h3>Mantra</h3>
+        <p>Chant sacred sounds to align your energy and focus your mind.</p>
+      </div>
+      <div class="card">
+        <h3>Body Scan</h3>
+        <p>Relax each part of your body while connecting deeply to your breath.</p>
+      </div>
+    </div>
+    <div class="audio-player">
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" id="blog">
+    <h2 class="section-title">Meditation Blogs</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="healing.jpg" alt="Blog 1">
+        <h3>How Meditation Heals the Mind</h3>
+        <p>Discover how mindfulness practices improve emotional balance and mental clarity.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="morning.jpg" alt="Blog 2">
+        <h3>Morning Rituals for a Peaceful Day</h3>
+        <p>Start your day with serenity through simple morning meditation routines.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="chakras.jpg" alt="Blog 3">
+        <h3>Chanting and Chakras</h3>
+        <p>Explore the power of sound healing and its effect on the body’s energy centers.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Spiritly. All rights reserved.
+  </footer>
 
 </body>
 </html>

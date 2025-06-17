@@ -33,12 +33,134 @@
             </ul>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <h1 class="hero-heading">Prayer</h1>
+        <section class="hero-section">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://videos.pexels.com/video-files/4782135/4782135-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Find Your Quiet Center</h1>
+            <p>Prayer is not about asking for what you want, but about becoming receptive to what you are.</p>
         </div>
-       
-</section>
+    </section>
+
+    <section class="universal-language">
+        <div class="container">
+            <h2>The Universal Language of Prayer</h2>
+            <p class="intro-text">Prayer is a universal language spoken in the silence of the heart. It is the gentle unfolding of gratitude, the courageous plea for guidance, and the humble surrender to a power greater than ourselves. Whether your prayer is a whispered word, a silent meditation, or a mindful walk in nature, it is a sacred bridge connecting you to the divine tapestry of life. Here, we honor all paths to this sacred dialogue.</p>
+            <div class="image-gallery">
+                <img src="https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Person meditating peacefully">
+                <img src="https://images.pexels.com/photos/7743937/pexels-photo-7743937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Clasped hands of an elderly person">
+                <img src="https://images.pexels.com/photos/3822623/pexels-photo-3822623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Woman practicing yoga at sunrise">
+                <img src="https://images.pexels.com/photos/6634567/pexels-photo-6634567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Person lighting a candle">
+            </div>
+        </div>
+    </section>
+
+    <section class="prayer-journey">
+        <div class="container">
+            <h2>A Journey Through Prayer</h2>
+            <div class="prayer-cards-container">
+                <div class="prayer-card">
+                    <img src="gratitude.jpg" alt="Person journaling with tea">
+                    <div class="card-content">
+                        <h3>The Prayer of Gratitude</h3>
+                        <p>Gratitude is the heart's memory. This prayer shifts your focus from what is lacking to the abundance that surrounds you.</p>
+                        <button class="cta-button" onclick="openModal('gratitude-modal')"><i class="fas fa-play-circle"></i> Guided Meditation</button>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <img src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Water flowing over stones">
+                    <div class="card-content">
+                        <h3>The Prayer for Healing</h3>
+                        <p>In times of pain, prayer can be a soothing balm for the body, mind, and spirit. A prayer for restoration and strength.</p>
+                        <button class="cta-button" onclick="openModal('healing-modal')"><i class="fas fa-music"></i> Listen to Healing Chant</button>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <img src="https://images.pexels.com/photos/158827/field-path-meadow-nature-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Path winding through a misty forest">
+                    <div class="card-content">
+                        <h3>The Prayer for Guidance</h3>
+                        <p>When you stand at a crossroads, prayer can be your inner compass. A request for clarity, wisdom, and courage.</p>
+                        <a href="#guidance-quotes" class="cta-button"><i class="fas fa-quote-left"></i> Read Wisdom</a>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <img src="https://images.pexels.com/photos/975250/pexels-photo-975250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Still, reflective lake at dusk">
+                    <div class="card-content">
+                        <h3>The Prayer for Peace</h3>
+                        <p>Finding inner peace is a radical act of self-care. A journey into the sanctuary of your own being.</p>
+                        <a href="your-peace-guide.pdf" download class="cta-button"><i class="fas fa-download"></i> Download Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="gratitude-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('gratitude-modal')">&times;</span>
+            <video class="modal-video" controls>
+                <source src="https://videos.pexels.com/video-files/853874/853874-hd_1920_1080_30fps.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="healing-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('healing-modal')">&times;</span>
+            <audio class="modal-audio" controls>
+                <source src="https://cdn.pixabay.com/audio/2022/02/04/audio_2d894ea67c.mp3" type="audio/mpeg">
+            </audio>
+            <p style="text-align:center; margin-top:20px;">Healing Ambient Chant</p>
+        </div>
+    </div>
+
+    <section id="guidance-quotes" class="voices-section">
+        <div class="container">
+            <h2>Voices of Prayer</h2>
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait of a smiling man">
+                <blockquote>
+                    "During my illness, prayer became my anchor. It didn't make the storm disappear, but it gave me the strength to hold on until the sun came out again."
+                </blockquote>
+                <cite>– David L.</cite>
+            </div>
+            <div class="testimonial reverse">
+                 <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait of a smiling woman">
+                <blockquote>
+                    "I used to think prayer was just for religious people. Now, I see it as my daily check-in with the universe. A few moments of gratitude in the morning changes my entire day."
+                </blockquote>
+                <cite>– Sarah M.</cite>
+            </div>
+        </div>
+    </section>
+
+    <section class="sacred-practice">
+        <div class="container">
+            <h2>Join the Tapestry of Hope</h2>
+            <p>Share a prayer or a positive intention for yourself or a loved one. Your words will join a chorus of hope and healing from around the world.</p>
+            <div id="prayer-wall" class="prayer-wall">
+                </div>
+            <div class="prayer-form-container">
+                <form id="prayer-form">
+                    <textarea id="prayer-input" name="prayer" rows="4" placeholder="Write your prayer or intention here..." required maxlength="200"></textarea>
+                    <button type="submit" class="submit-button">Add to the Wall</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Spiritly. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+<script src="prayer.js"></script>
 
 </body>
 </html>
