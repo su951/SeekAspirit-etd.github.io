@@ -115,187 +115,285 @@ nav li a:hover {
     visibility: visible;
     transform: translateX(0);
 }
-/* Reset and Base */
+/* ========================================================================= */
+/* Spiritly - Meditation Page Styling                                        */
+/* Inspired by the Prayer Page Aesthetic                                     */
+/* ========================================================================= */
+
+/* -------------------- Global Styles & Typography -------------------- */
+:root {
+    --primary-font: 'Lora', serif; /* Elegant serif for headings */
+    --secondary-font: 'Montserrat', sans-serif; /* Clean sans-serif for body */
+    --text-color: #4a4a4a;
+    --heading-color: #2c3e50;
+    --background-color: #fdfdff; /* A very light, almost white lavender */
+    --accent-color-deep: #5e548e; /* Deep, calming purple for main accents */
+    --accent-color-medium: #9067c6; /* A softer, inviting purple */
+    --card-background: #ffffff;
+}
+
+/* Base Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #FDFCF9;
-  color: #333333;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.8;
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-/* Hero Section */
+h1, h2, h3 {
+    font-family: var(--primary-font);
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color-deep);
+}
+
+/* -------------------- Hero Section -------------------- */
 .hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
 .video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  filter: brightness(0.5) blur(0.5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* This overlay darkens the video, making text readable */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 60, 0.5); /* A cool-toned dark overlay */
+    z-index: -1;
 }
 
 .overlay {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  padding: 0 20px;
-  max-width: 800px;
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
 }
 
 .overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #FFE6F0;
+    margin-bottom: 1rem;
 }
 
 .overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  color: #f3e6ee;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    font-style: italic;
+    max-width: 600px;
+    margin: 20px auto 30px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .cta {
-  padding: 12px 30px;
-  background-color: #9F86C0;
-  color: #fff;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+    display: inline-block;
+    background-color: var(--accent-color-medium);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .cta:hover {
-  background-color: #BFA2DB;
+    background-color: var(--accent-color-deep);
+    transform: translateY(-3px);
 }
 
-/* Section */
+/* -------------------- General Section Styling -------------------- */
 .section {
-  padding: 60px 20px;
-  text-align: center;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-weight: bold;
-  color: #9F86C0;
+    color: var(--heading-color);
 }
 
-/* Cards */
+/* -------------------- Meditation Types Section -------------------- */
+#meditation-types {
+    background-color: #f6f4fa; /* A slightly off-white to separate sections */
+}
+
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  padding: 24px;
-  max-width: 280px;
-  transition: 0.3s ease;
-  border-top: 5px solid #BFA2DB;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--accent-color-medium);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card p {
+    margin-top: 15px;
 }
 
 .audio-player {
-  width: 80%;
-  max-width: 500px;
-  margin: 20px auto 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0;
 }
 
-/* Blog Section */
+/* Customizing the default audio player */
+audio {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #f6f4fa;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+    color: var(--accent-color-deep);
+    border-radius: 50%;
+}
+
+/* -------------------- Blog Section -------------------- */
+#blog {
+    background-color: var(--background-color);
+}
+
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .blog-card {
-  background-color: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-  border-top: 6px solid #FADADD;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .blog-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .blog-card h3 {
-  padding: 16px 16px 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #BFA2DB;
+    padding: 20px 25px 0;
+    font-size: 1.3rem;
+    color: var(--heading-color);
 }
 
 .blog-card p {
-  padding: 8px 16px;
-  font-size: 0.95rem;
-  color: #555;
+    padding: 10px 25px;
+    flex-grow: 1; /* Allows paragraphs to take available space */
 }
 
 .blog-card a {
-  display: block;
-  padding: 12px 16px 20px;
-  color: #9F86C0;
-  font-weight: 500;
-  text-decoration: none;
+    display: inline-block;
+    padding: 0 25px 25px;
+    color: var(--accent-color-medium);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .blog-card a:hover {
-  text-decoration: underline;
+    color: var(--accent-color-deep);
+    text-decoration: underline;
 }
 
-/* Footer */
+/* -------------------- Footer -------------------- */
 .footer {
-  background-color: #FFE6F0;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #333;
+    background-color: #e3d9e9; /* A soft, muted purple background */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--heading-color);
 }
 
-/* Mobile */
+/* -------------------- Responsive Design -------------------- */
 @media (max-width: 768px) {
-  .overlay h1 {
-    font-size: 2.2rem;
-  }
+    h1 {
+        font-size: 2.5rem;
+    }
 
-  .overlay p {
-    font-size: 1rem;
-  }
+    .hero {
+        height: 90vh; /* Give more space on mobile */
+    }
 
-  .hero {
-    height: 80vh;
-  }
+    .overlay p {
+        font-size: 1.1rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
 }
-
