@@ -5,6 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const modal = document.getElementById(modalId);
         if (modal) {
             modal.classList.add('active');
+            
+            // Play video with sound when modal opens
+            const video = modal.querySelector('video');
+            const audio = modal.querySelector('audio');
+            
+            if (video) {
+                video.muted = false; // Ensure video is not muted
+                video.play().catch(e => {
+                    console.log("Video play failed:", e);
+                    // Fallback: Show play button if autoplay fails
+                    video.controls = true;
+                });
+            }
+            if (audio) {
+                audio.play().catch(e => {
+                    console.log("Audio play failed:", e);
+                    // Fallback for audio if needed
+                });
+            }
         }
     };
 
@@ -18,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (video) {
                 video.pause();
                 video.currentTime = 0;
+                video.controls = false; // Reset controls
             }
             if (audio) {
                 audio.pause();
@@ -34,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-     // Close modal on overlay click
+    
+    // Close modal on overlay click
     document.querySelectorAll('.modal-overlay').forEach(modal => {
         modal.addEventListener('click', function(event) {
             if (event.target === this) {
