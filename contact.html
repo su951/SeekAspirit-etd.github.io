@@ -202,21 +202,51 @@
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBihkMtv01iKT1odnfH_6ilImu_-MijICo",
-    authDomain: "contactus-beff5.firebaseapp.com",
-    projectId: "contactus-beff5",
-    storageBucket: "contactus-beff5.firebasestorage.app",
-    messagingSenderId: "977845064641",
-    appId: "1:977845064641:web:e3956dd94924d1c44ad540",
-    measurementId: "G-3NDJ8X01L2"
-  };
+
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+    // go to payment gateway when the forM is submitted
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Simulated form submission
+    formMessage.style.color = 'green';
+    formMessage.textContent = "🙏 Thank you! Your message has been received. We'll contact you soon.";
+    
+    //redirect to payment gateway
+    redirectToPaymentGateway();
+//add a payment gateway
+  // This is a placeholder for payment gateway integration
+  // You can use services like Stripe, PayPal, etc.
+  console.log("Payment gateway integration can be added here.");
+  // For example, you can initialize razorpay here
+  // Razorpay integration code can be added here
+  const razorpayKey = ''; // Replace with your Razorpay key
+  if (razorpayKey) {
+    console.log("Razorpay key is set. You can proceed with payment integration.");
+  } else {
+    console.log("Razorpay key is not set. Please configure it for payment processing.");
+  }
+  //verift if payment is successful
+  // This is a placeholder for payment verification logic
+  console.log("Payment verification logic can be added here.");
+  // You can use webhooks or API calls to verify payment status
+  // For example, you can check payment status using Razorpay API
+  const paymentStatus = true; // Simulated payment status
+  if (paymentStatus) {
+    console.log("Payment is successful. Redirecting to WhatsApp group.");
+    redirectToWhatsApp();
+  } else {
+    console.log("Payment failed. Please try again.");
+  }
+  });
+  // Add responsiveness where after payment  is successful, the user will be redirected to a whatsapp group
+  const whatsappGroupLink = "https://chat.whatsapp.com/your-group-link"; // Replace with your WhatsApp group link
+  function redirectToWhatsApp() {
+    window.location.href = whatsappGroupLink;
+  }
 </script>
 
   
