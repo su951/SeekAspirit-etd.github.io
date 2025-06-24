@@ -86,3 +86,56 @@ document.addEventListener('DOMContentLoaded', () => {
         showMySession(); // For demo, proceed to "My Session"
     });
 });
+    // Simulated database (localStorage)
+  const savedUser = JSON.parse(localStorage.getItem("spiritualUser"));
+  const isLoggedIn = localStorage.getItem("spiritualLoggedIn") === "true";
+
+  // Check sign-up status
+  if (savedUser) {
+    // Disable sign-up form
+    Array.from(signupForm.elements).forEach(el => el.disabled = true);
+    signupForm.querySelector(".note").textContent = "You are already signed up.";
+  } else {
+    // Enable sign-up form
+    Array.from(signupForm.elements).forEach(el => el.disabled = false);
+  }
+
+  // Check login status
+  if (isLoggedIn) {
+    Array.from(loginForm.elements).forEach(el => el.disabled = true);
+    loginForm.querySelector(".note").textContent = "You are already logged in.";
+  } else {
+    Array.from(loginForm.elements).forEach(el => el.disabled = false);
+  }
+
+  // Handle login
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = loginForm.elements[0].value;
+    const password = loginForm.elements[1].value;
+
+    if (savedUser && savedUser.email === email && savedUser.password === password) {
+      alert("Login successful!");
+      localStorage.setItem("spiritualLoggedIn", "true");
+      location.reload();
+    } else {
+      alert("Invalid credentials.");
+    }
+  });
+
+  // Handle signup
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = signupForm.elements[0].value;
+    const email = signupForm.elements[1].value;
+    const password = signupForm.elements[2].value;
+
+    if (!savedUser) {
+      const newUser = { name, email, password };
+      localStorage.setItem("spiritualUser", JSON.stringify(newUser));
+      alert("Signup successful! Please login.");
+      location.reload();
+    } else {
+      alert("User already signed up.");
+    }
+  });
