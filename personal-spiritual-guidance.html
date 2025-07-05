@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Spiritual Guidance</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #b2dfdb);
+      color: #004d40;
+    }
+    header {
+      background-color: #0097a7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #00838f;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      text-align: center;
+    }
+    input {
+      padding: 0.5rem;
+      margin: 1rem 0;
+      width: 90%;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+    }
+    .roadmap {
+      margin-top: 1rem;
+      background-color: #e0f2f1;
+      padding: 1rem;
+      border-radius: 12px;
+      display: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0097a7;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<!--navbar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="footprints.html">Footprints</a></li>
+                <li class="dropdown">
+                    <a href="privileges.html">Privileges</a>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="meditation.html">Meditation</a>
+                        <a href="prayer.html">Prayer</a>
+                        <div class="sub-dropdown">
+                            <a href="mantra.html">Mantra Chanting</a>
+                            <div class="sub-dropdown-content">
+                                <a href="mrityunjaya.html">Mahamrityunjaya</a>
+                                <a href="gayatrimantra.html">Gayatri Mantra</a>
+                                <a href="durga.html">Durga Dvatrimsha Namavali</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="resources.html">Insights</a></li>
+                <li><a href="testimonials.html">Soul Stories</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+
+<div class='heading'>
+  <h1>✨ Heal With SPIRITLY ✨</h1>
+  <p>"Physical, Mental aur Spiritual taqleef? Chinta mat karo, hum hain na!"</p>
+</div>
+
+<section>
+  <div class="card">
+    <h2>Personal Consultation – ₹100 Only </h2>
+    <p>Get one-on-one vibes upgrade with our in-house guruji! Jo tumhare chakras hilaa de... but in a good way 😅</p>
+    <button onclick="openModal()">Book Now</button>
+  </div>
+
+  <div class="card">
+    <h2>Personalized Wellness Roadmap </h2>
+    <p>Tell us your name aur hum batayenge aapka spiritual, mental aur physical wellness ka jugaadu roadmap 😌</p>
+    <input type="text" id="nameInput" placeholder="Enter your good name yaar...">
+    <button onclick="generateRoadmap()">Get My Path</button>
+    <div class="roadmap" id="roadmap"></div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="bookingModal">
+  <div class="modal-content">
+    <h3>Book Your Healing Spot </h3>
+    <p>One spiritual fix at a time, ₹100 mein guaranteed good-vibez. Cash, UPI, or blessings accepted 😇</p>
+    <button onclick="closeModal()">OK Baba </button>
+  </div>
+</div>
+ <div><h3>📅 Session Format & Access</h3>
+<ul><li>Yoga: Mon–Fri, 20 sessions/month (1 hour each)</li>
+
+<li>Therapies: Weekly sessions (4/month per service)</li>
+
+<li>Live Access: Online / Offline (Gardanibag shantipath  near Mangala bhawan Patna 800001 visits)</li>
+
+<li>Group Chantings: Available to all yoga members at no extra cost</li></ul>
+    <div> Book Your Spot Today!
+ Add Your Location / Center Address - Gardanibag shantipath  near Mangala bhawan Patna 800001
+ Call / WhatsApp: ‪+91 9955437128‬
+ Website: https://spiritly.in/
+ Email: spiritlyconnected@gmail.com 
+</div></div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Spiritly. All Rights Reserved.</p>
+             <div class="footer-left">
+      <h2>SPIRITLY</h2>
+      <p>© 2025 All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <a href="privacyandpolicy.html">Privacy Policy</a>
+      <a href="terms and conditions">Terms of Service</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+  function openModal() {
+    document.getElementById('bookingModal').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('bookingModal').style.display = 'none';
+  }
+
+  function generateRoadmap() {
+    const name = document.getElementById('nameInput').value.trim();
+    const roadmapDiv = document.getElementById('roadmap');
+
+    if (name === '') {
+      roadmapDiv.style.display = 'block';
+      roadmapDiv.innerHTML = "Naam toh daalo pehle! Chakra kaise align karein bina naam ke? ";
+      return;
+    }
+
+    const plans = [
+      `Hey ${name}, drink 3L paani daily – paani nahi pee toh peace kaise milega? `,
+      `Practice deep breathing – aur nahi toh Netflix binge ke saath pranayam hi karlo `,
+      `Har Sunday, thoda nature walk – plants ke saath bonding zaroori hai! `,
+      `Meditation before scrolling Insta. Mind > memes sometimes `,
+      `Talk to your soul. Matlab khud se baat karna, not ghost wala `
+    ];
+
+    const shuffled = plans.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    roadmapDiv.style.display = 'block';
+    roadmapDiv.innerHTML = `<h4>Your Vibez Plan, ${name} 🌈</h4><ul>${shuffled.map(p => `<li>${p}</li>`).join('')}</ul>`;
+  }
+
+  // Close modal on outside click
+  window.onclick = function(event) {
+    const modal = document.getElementById('bookingModal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
